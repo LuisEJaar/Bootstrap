@@ -17,7 +17,7 @@
         <nav class="bg-dark navbar navbar-expand-sm navbar-dark py-3 fixed-top">
             <div class="container d-flex">
                 <a href="" class="navbar-brand">Bootstrap Site</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <button aria-label="Toggle Navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
@@ -26,10 +26,16 @@
                             <a class="nav-link" href="#food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#outreach">Mission</a>
+                            <a class="nav-link" href="#mission">Mission</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#questions">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chefs">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +54,7 @@
             further there partner and get to munchin. My grandpappy taught my pappy me this here recipe and he done
             taught me.
                         </p>
-                        <button class="btn btn-success btn-lg">Get in my belly!</button>
+                        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#recipe">Get in my belly!</button>
                     </div>
                     <img class="img-fluid w-50 d-none d-sm-block" src="./assets/Poke bowl-bro.svg" alt="Poke Bowl">
                 </div>
@@ -132,8 +138,8 @@
             </div>
         </section>
 
-        <section class="p-5 bg-dark text-light">
-            <div class="outreach">
+        <section id="mission" class="p-5 bg-dark text-light">
+            <div>
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md p-5">
                         <div class="container">
@@ -200,6 +206,118 @@
                   </div>
             </div>
         </section>
+
+        <!-- Chefs -->
+        <section id="chefs" class="p-5 bg-success">
+            <div class="container">
+                <h2 class="text-center text-white">Our Chefs</h2>
+                <p class="lead text-center text-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque unde, illum nihil ullam obcaecati a quod ipsam error quisquam? Eaque.</p>
+                <div class="row g-4">
+                    <!-- Chef 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                              <img src="./assets/chef1.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-title mb-3">Chef Name</h5>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vitae sint saepe, odio culpa est?
+                              </p>
+                              <a aria-label="Book Chef" href="#"><i class="bi bi-journal-bookmark-fill text-dark mx-1"></i></a>
+                              <a aria-label="Chef Linkedin" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a aria-label="Chef Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a aria-label="Chef Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Chef 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                              <img src="./assets/chef2.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-title mb-3">Chef Name</h5>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vitae sint saepe, odio culpa est?
+                              </p>
+                              <a aria-label="Book Chef" href="#"><i class="bi bi-journal-bookmark-fill text-dark mx-1"></i></a>
+                              <a aria-label="Chef Linkedin" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a aria-label="Chef Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a aria-label="Chef Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Chef 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                              <img src="./assets/youngchefs.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-title mb-3">Chef Name</h5>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vitae sint saepe, odio culpa est?
+                              </p>
+                              <a aria-label="Book Chef" href="#"><i class="bi bi-journal-bookmark-fill text-dark mx-1"></i></a>
+                              <a aria-label="Chef Linkedin" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a aria-label="Chef Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a aria-label="Chef Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                     <!-- Chef 3 -->
+                     <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                              <img src="https://randomuser.me/api/portraits/women/11.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-title mb-3">Chef Name</h5>
+                              <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vitae sint saepe, odio culpa est?
+                              </p>
+                              <a aria-label="Book Chef" href="#"><i class="bi bi-journal-bookmark-fill text-dark mx-1"></i></a>
+                              <a aria-label="Chef Linkedin" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a aria-label="Chef Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a aria-label="Chef Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4">Contact Info</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Main Location:</span> 20 South Ave New Orleans LA
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Busines Phone:</span> (999) 999-0000
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Employee Phone:</span> (999) 999-0000
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Employee Email:</span> exampleEmail@email.email
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <iframe aria-label="Store Location" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54752.73288400213!2d-89.66279304999999!3d30.941285199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889e03a47252b05b%3A0xd6f1f9690423b9bb!2sDong%20Phuong%20Bakery%20%26%20Restaurant!5e0!3m2!1sen!2sus!4v1658091261864!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2022 Luis Jaar</p>
+                <a href="#" aria-label="to top of page" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle display-3"></i>
+                </a>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
